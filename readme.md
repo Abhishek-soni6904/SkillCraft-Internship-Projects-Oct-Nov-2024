@@ -9,22 +9,22 @@ During this internship, I worked on four exciting projects that enhanced my skil
 ### 🌟 Product Landing Page  
 A fully responsive and interactive landing page for a high-performance laptop named *InfernoBook*.  
 - [LinkedIn Post](#)  
-- [Project Folder](./SCT_WD_1)  
+- [Check Out the Code](./SCT_WD_1)  
 
 ### 🌟 Stopwatch Application  
 A feature-rich stopwatch with lap recording and reset functionality.  
 - [LinkedIn Post](#)  
-- [Project Folder](./SCT_WD_2)  
+- [Check Out the Code](./SCT_WD_2)  
 
 ### 🌟 Tic-Tac-Toe Game  
 A fun and engaging two-player game with win announcements using text and speech synthesis.  
 - [LinkedIn Post](#)  
-- [Project Folder](./SCT_WD_3)  
+- [Check Out the Code](./SCT_WD_3)  
 
 ### 🌟 To-Do Web App  
 A professional and user-friendly task management application.  
 - [LinkedIn Post](#)  
-- [Project Folder](./SCT_WD_4)  
+- [Check Out the Code](./SCT_WD_4)  
 
 ---
 
