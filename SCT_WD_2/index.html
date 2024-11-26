@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="stopwatchContainer">
+      <div id="timerDisplay"><div>00:00</div><div class="msDisplay">00:000</div></div>
+      <div class="buttonWrapper">
+        <button id="playPause-btn">Play</button>
+        <button id="rst-btn" disabled>Reset</button>
+        <button id="recordLap-btn" disabled>Lap</button>
+      </div>
+      <div class="lap-list">
+        <table>
+          <thead id="tableHead">
+            <tr>
+              <th>No.</th>
+              <th>Lap Time</th>
+              <th>Total Time</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+          </tbody>
+        </table>
+    </div>
+    <button id="clrLap-btn" disabled>Clear Laps</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

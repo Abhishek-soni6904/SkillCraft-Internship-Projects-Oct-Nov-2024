@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Digital-7';
+  src: url('font/digital-7.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #2C2C2C;
+  color: #E0E0E0;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.stopwatchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#timerDisplay {
+  padding: 10px;
+  font-size: 7rem;
+  color: #FF8C00;
+  font-family: 'Digital-7', sans-serif;
+}
+
+.msDisplay {
+  font-size: 5rem;
+  margin-left: 30px;
+  color: #FFB84D;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+button {
+  width: 90px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #404040;
+  color: #FF8C00;
+  border: 3px solid #FF8C00;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover{
+  color: #FFFFFF;
+  background-color: #FF8C00;
+  border-color: #FF4500;
+  cursor: pointer;
+  outline: none;
+}
+button:disabled {
+display: none;
+}
+
+#clrLap-btn {
+  width: 120px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.lap-list {
+  height: 52vh;
+  overflow-y: auto;
+  font-size: 1.43rem;
+  scrollbar-width: thin;
+  scrollbar-color: #FF8C00 #2C2C2C;
+}
+
+.lap-list table {
+  border-spacing: 24px 10px;
+  color: #FFB84D;
+}
+
+#tableHead {
+  color: #FF8C00;
+  position: sticky;
+  display: none;
+  top: 0;
+  background-color: #2C2C2C;
+  z-index: 1;
+}
+
+@media (max-width: 450px) {
+  .lap-list {
+    height: 300px;
+    font-size: 1rem;
+  }
+}
