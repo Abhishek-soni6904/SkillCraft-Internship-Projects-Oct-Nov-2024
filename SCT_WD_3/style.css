@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
+body {
+  background: linear-gradient(135deg, #2b2d42, #3a405a);
+  font-family: "Play", sans-serif;
+  color: #f8f8f2;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid #44475a;
+  padding: 2vw;
+  background-color: #282a36;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  padding: 2vw;
+  background-color: #44475a;
+  border-radius: 10px;
+}
+
+.box {
+  border: 2px solid #5b6eae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8vw;
+  background-color: #282a36;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: rgba(132, 148, 197, 0.3);
+}
+
+.content h1 {
+  font-size: 5vw;
+}
+
+#turnAndWinIndicator {
+  font-size: 2.5vw;
+}
+
+#resetButton {
+  margin: 0 1vw;
+  background-color: #8be9fd;
+  color: #282a36;
+  border: 5px solid rgba(255, 0, 255, 0.3);
+  padding: 5px;
+  font: 900 2.3vw "Play", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+#resetButton:hover {
+  background-color: #3c67d4;
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 90%;
+  }
+  #gameBoard {
+    grid-template-columns: repeat(3, 15vw);
+    grid-template-rows: repeat(3, 15vw);
+  }
+  .box {
+    font-size: 13vw;
+  }
+  .content h1 {
+    font-size: 6vw;
+    text-align: center;
+  }
+  #turnAndWinIndicator {
+    font-size: 4vw;
+  }
+  #resetButton {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 490px) {
+  .container {
+    width: 70%;
+    flex-wrap: wrap;
+  }
+  #gameBoard {
+    grid-template-columns: repeat(3, 18vw);
+    grid-template-rows: repeat(3, 18vw);
+  }
+  .box {
+    font-size: 16vw;
+  }
+}

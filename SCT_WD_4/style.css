@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+}
+
+.flex-item, #add-task-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskActions button:hover, .taskCheckbox:hover, #add-task-btn:hover {
+    border: 2px solid #ff6600;
+    cursor: pointer;
+}
+
+.taskName, .taskListSection {
+    scrollbar-width: thin;
+    scrollbar-color: #ff914d transparent;
+}
+
+.appContainer {
+    width: 95%;
+    max-width: 600px;
+    flex-direction: column;
+    background-color: #262626;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.appHeader {
+    width: 100%;
+    font-size: 1.7rem;
+    color: #ff8c00;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #333333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+}
+
+#taskCounter {
+    margin-top: 10px;
+    color: #ffb347;
+}
+
+.taskInputSection {
+    width: 98%;
+    gap: 15px;
+}
+
+#taskInput {
+    flex: 1;
+    height: 50px;
+    background-color: #333333;
+    font-size: 1.3rem;
+    padding-left: 15px;
+    border-radius: 20px;
+    border: 2px solid #444444;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#taskInput:focus {
+    border-color: #ff914d;
+}
+
+#add-task-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#add-task-btn:hover {
+    background-color: #ff8533;
+}
+
+.taskListSection {
+    width: 100%;
+    max-height: 56vh;
+    overflow-y: auto;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #333333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.taskEntry {
+    align-items: flex-start;
+    font-size: 1.4rem;
+    color: #fff;
+    gap: 10px;
+}
+
+.taskCheckbox {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    font-size: 1.2rem;
+    background-color: #444444;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.taskCheckbox::after {
+    content: "\2714";
+    color: #fff;
+    display: none;
+}
+
+.taskCheckbox:checked {
+    background-color: #ff6600;
+}
+
+.taskCheckbox:checked::after {
+    display: block;
+}
+
+.taskName {
+    flex: 1;
+    max-height: 85px;
+    overflow: auto;
+}
+
+.taskCompleted {
+    text-decoration: line-through;
+    color: #a8a8a8;
+}
+
+.taskEntry input[type="text"] {
+    flex: 1;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #ff914d;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 2px 10px;
+}
+
+.edit-task-btn,.delete-task-btn {
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-size: 1.2rem;
+    width: 30px;
+    color: #ff0000;
+}
+.edit-task-btn{
+    color: #fff;
+}
+.taskTimestamps {
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: rgba(240, 230, 214, 0.7);
+    border-top: 1px solid rgba(240, 230, 214, 0.3);
+    padding-top: 5px;
+    margin-top: 5px;
+}
+@media (max-width:530px) {
+    .appContainer{
+        padding: 8px;
+    }
+    .appHeader{
+        font-size: 1.3rem;
+    }
+    #taskinputSection{
+        width: 100%;
+    }
+    #taskInput{
+        width: 80%;
+    }
+    .taskTimestamps{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .taskName{
+        font-size: 1.2rem;
+    }
+    .taskCheckbox{
+        height: 20px;
+        width: 20px;
+        font-size: 1rem;
+    }
+    .taskEntry input[type="text"]{
+        width: 90%;
+    }
+}
