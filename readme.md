@@ -8,22 +8,22 @@ During this internship, I worked on four exciting projects that enhanced my skil
 
 ### 🌟 Product Landing Page  
 A fully responsive and interactive landing page for a high-performance laptop named *InfernoBook*.  
-- [LinkedIn Post](#)  
+- [LinkedIn Post](https://www.linkedin.com/posts/abhishek-soni-662028331_webdevelopment-skillcrafttechnology-infernobook-activity-7257385675581186048-41EK?utm_source=share&utm_medium=member_desktop)  
 - [Check Out the Code](./SCT_WD_1)  
 
 ### 🌟 Stopwatch Application  
 A feature-rich stopwatch with lap recording and reset functionality.  
-- [LinkedIn Post](#)  
+- [LinkedIn Post](https://www.linkedin.com/posts/abhishek-soni-662028331_webdevelopment-skillcrafttechnology-stopwatchapp-activity-7258416248072351744-6zJS?utm_source=share&utm_medium=member_desktop)  
 - [Check Out the Code](./SCT_WD_2)  
 
 ### 🌟 Tic-Tac-Toe Game  
 A fun and engaging two-player game with win announcements using text and speech synthesis.  
-- [LinkedIn Post](#)  
+- [LinkedIn Post](https://www.linkedin.com/posts/abhishek-soni-662028331_webdevelopment-skillcrafttechnology-tictactoe-activity-7259164659184762880-PSbc?utm_source=share&utm_medium=member_desktop)  
 - [Check Out the Code](./SCT_WD_3)  
 
 ### 🌟 To-Do Web App  
 A professional and user-friendly task management application.  
-- [LinkedIn Post](#)  
+- [LinkedIn Post](https://www.linkedin.com/posts/abhishek-soni-662028331_webdevelopment-skillcrafttechnology-todoapp-activity-7261019550169595904-iCD9?utm_source=share&utm_medium=member_desktop)  
 - [Check Out the Code](./SCT_WD_4)  
 
 ---
