@@ -30,5 +30,3 @@ A professional and user-friendly task management application.
 
 ## Acknowledgements 💡  
 I am grateful to **SkillCraft Technology** for this wonderful opportunity and to my mentors for their invaluable guidance. This internship has been a pivotal step in my journey as a developer, and I look forward to applying these skills to future projects. 🚀  
-
-```
