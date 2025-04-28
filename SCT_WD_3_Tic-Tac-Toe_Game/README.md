@@ -2,6 +2,8 @@
 
 This project showcases the skills honed during my internship at SkillCraft Technology, where we focus on developing real-world applications through practical experience. This classic game demonstrates my proficiency in **HTML, CSS, and JavaScript** while highlighting interactive design, responsive layouts, and engaging user experience.
 
+- [Live Demo](http://tic-tac-toe.devbyabhishek.infinityfreeapp.com)
+
 ## Features
 
 *   **Responsive Design:** The game board adapts to different screen sizes, ensuring an optimal experience across devices.
