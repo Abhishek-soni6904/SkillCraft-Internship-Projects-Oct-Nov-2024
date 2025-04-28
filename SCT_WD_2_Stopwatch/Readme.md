@@ -1,6 +1,7 @@
 # Stopwatch Application
 
 This project showcases the skills I honed during my internship at **SkillCraft Technology**, where we focused on developing real-world applications through practical experience. The stopwatch application demonstrates my proficiency in **HTML**, **CSS**, and **JavaScript** while highlighting interactive design, responsive layouts, and engaging user experiences.
+- [Live Demo](http://stopwatch.devbyabhishek.infinityfreeapp.com)
 
 ## Features
 - **Start/Stop Timer:** Start and stop the timer with a single button click.
