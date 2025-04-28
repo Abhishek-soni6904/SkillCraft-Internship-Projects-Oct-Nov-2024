@@ -1,5 +1,5 @@
 // Get the required HTML elements
-const timerDispaly = document.getElementById("timerDisplay");
+const timerDisplay = document.getElementById("timerDisplay");
 const tableBody = document.getElementById("tableBody");
 const tableHead = document.getElementById("tableHead");
 const playPauseBtn = document.getElementById("playPause-btn");
@@ -35,18 +35,18 @@ function startStopTimer() {
 
 // Format time into hours, minutes, seconds, and milliseconds
 function formatTime(Time) {
-  const Miliseconds = String(Math.floor(Time % 1000)).padStart(3, "0");
+  const Milliseconds = String(Math.floor(Time % 1000)).padStart(3, "0");
   const Seconds = `${String(Math.floor((Time / 1000) % 60)).padStart(2, "0")}:`;
   const Minutes = `${String(Math.floor((Time / 60000) % 60)).padStart(2, "0")}`;
   const Hours = `${String(Math.floor((Time / 3600000) % 24)).padStart(2, "0")}:`;
-  return [Miliseconds, Seconds, Minutes, Hours];
+  return [Milliseconds, Seconds, Minutes, Hours];
 }
 
 // Show the updated time on the timer display
 function showTime() {
   updatedTime = Date.now() - startTime;
   const formattedTime = formatTime(updatedTime);
-  timerDispaly.innerHTML = `<div>${formattedTime[3]}${formattedTime[2]}</div><div class="msDisplay">${formattedTime[1]}${formattedTime[0]}</div>`;
+  timerDisplay.innerHTML = `<div>${formattedTime[3]}${formattedTime[2]}</div><div class="msDisplay">${formattedTime[1]}${formattedTime[0]}</div>`;
 }
 
 // Reset the timer and clear lap data
@@ -55,7 +55,7 @@ function resetTimer() {
   elapsedTime = 0;
   previousTime = 0;
   lapCounter = 1;
-  timerDispaly.innerHTML = '<div>00:00</div><div class="msDisplay">00:000</div>';
+  timerDisplay.innerHTML = '<div>00:00</div><div class="msDisplay">00:000</div>';
   rstBtn.disabled = true;
   recordLapBtn.disabled = true;
   clrLapBtn.disabled = true;
