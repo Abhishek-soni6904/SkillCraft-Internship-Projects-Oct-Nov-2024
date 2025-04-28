@@ -4,19 +4,20 @@
   --primary-color: #f9d371;
   --secondary-color: #e25822;
   --max-width: 1350px;
-  --linear-gradient:linear-gradient(90deg, #ff4500, #ffa500, #ffff00, #ffffff);
+  --linear-gradient: linear-gradient(90deg, #ff4500, #ffa500, #ffff00, #ffffff);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 .navItemContainer .menuicon {
   display: none;
   cursor: pointer;
   font-size: 2rem;
 }
- .menuicon:hover{
+.menuicon:hover {
   color: var(--secondary-color);
 }
 body {
@@ -24,13 +25,14 @@ body {
   color: var(--primary-color);
   font-family: "Poppins", sans-serif;
 }
-.gradient, .navitem a:hover{
+.gradient,
+.navitem a:hover {
   color: transparent;
   background: var(--linear-gradient);
   background-clip: text;
 }
 header {
-  padding-top:80px;
+  padding-top: 80px;
   background-image: url(assets/bg.jpg);
   background-position: center center;
   background-size: cover;
@@ -129,14 +131,14 @@ header {
   border-color: var(--secondary-color);
 }
 .homeP1 {
-    position: relative;
-    isolation: isolate;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-align: right;
+  position: relative;
+  isolation: isolate;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: right;
 }
 .homeP1::before {
   position: absolute;
@@ -172,8 +174,8 @@ header {
   width: 600px;
   transition: transform 0.3s ease;
 }
-.actionBtn{
-    margin: 20px auto;
+.actionBtn {
+  margin: 20px auto;
   padding: 0.5rem 1rem;
   outline: none;
   display: block;
@@ -204,6 +206,7 @@ header {
   text-align: justify;
   border-radius: 20px;
   background-color: #1b1a1a;
+  scroll-margin-top:100px ;
 }
 h2 {
   font-size: 3rem;
@@ -262,6 +265,9 @@ footer {
 .socials {
   font-size: 1.5rem;
 }
+.socials a{
+  text-decoration: none;
+}
 .socials i {
   margin: 10px 20px 20px 0;
   color: var(--primary-color);
@@ -272,7 +278,7 @@ footer {
 }
 
 @media (max-width: 1160px) {
-  .homeImage img{
+  .homeImage img {
     width: 400px;
   }
   #home h1 {
@@ -285,11 +291,11 @@ footer {
 }
 
 @media (max-width: 800px) {
-  header{
+  header {
     height: auto;
     max-height: fit-content;
   }
-  .navbar{
+  .navbar {
     background-color: #000;
     padding: 10px 20px;
   }
@@ -310,19 +316,18 @@ footer {
     background-color: #000;
     box-shadow: 0 4px 10px #0000004d;
   }
-  
+
   .menuicon.visible {
-    display: block; 
+    display: block;
   }
-  
+
   .navItems.show {
-    display: flex; 
+    display: flex;
   }
   #home {
     flex-direction: column;
     padding: 20px;
   }
-  
 
   .homeImage img {
     width: 100%;
@@ -351,12 +356,12 @@ footer {
     padding: 10px;
   }
 
-  .cardItem video{
+  .cardItem video {
     width: 100%;
   }
-.cardItem img{
-  width: 40%;
-}
+  .cardItem img {
+    width: 40%;
+  }
   footer {
     font-size: 1rem;
   }
